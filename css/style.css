@@ -72,7 +72,207 @@ a {
     
     
 }
+
+/* QuienSoy */ 
+.navbar {
+    background-color: red;
+    display: flex;
+}
+.menu-mobil-superbikes {
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+    
+}
+
+.toprak-title {
+  list-style-type: none;  
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+  padding-left: 1rem;
+  margin-left: 1rem;
+
+}
+.navbar-toggler {
+    margin-right: 1rem;
+}
+.navbar-nav {
+    padding-left: 2.15rem;
+}
+.titulo-superbikes {
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.h2 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    color: black;
+    margin: 1rem 1rem .5rem 1rem;
+    padding: 0 0 .3rem 0;
+    
+}
+.p-quiensoy {
+    text-align: start;
+    color: white;
+    margin: .25rem 1rem 0 1rem;
+}
+.menu-desktop-superbikes {
+    display: none;
+}
+
+/* Yamaha Racing */
+.yamaha_racing {
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.img-yamaharacing {
+    margin-left: 1rem;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.p-yamaha {
+    color:white;
+    padding: 1rem;
+}
+
+/* Academia */
+
+.div-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: .5rem 1rem 0rem 1rem;
+    color: white;
+    text-decoration-line: none;
+    font-size: 1.7rem;
+}
+.div-h1 > h1 {
+    padding-inline: 1rem;
+}
+.tarjetitas {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0rem;
+}
+.tarjetita1 {
+    background-color: #999;
+    margin: 1rem 1rem;
+    flex: 1;
+    max-width: 32rem;
+}
+.h2_academia {
+    display: inline;
+    padding: .1rem .1rem .1rem .1rem;
+    color: white;
+    background-color: red;
+}
+.p_academia {
+    color: white;
+    margin: .5rem .5rem .5rem .5rem;
+}
+.a_academia {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    background-color: black;
+    font-size: larger;
+    border-radius: .1rem ;
+}
+.img-academia {
+    width: 95%;
+    margin-inline: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* CONTACTO */
+.h1-contacto {
+    margin: 1rem 0 1rem 0;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0rem 1rem 0rem 1rem;
+    color: white;
+    text-decoration-line: none;
+    font-size: 1.7rem;
+}
+.label {
+    color: white;
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+form li + li {
+    margin-top: 1em;
+  }
+  
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    
+  }
+  
+input,textarea {
+    font: 1em sans-serif;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+input:focus,textarea:focus {
+    border-color: #000;
+  }
+  
+textarea {
+    vertical-align: top;
+    height: 3em;
+  }
+  
+.button {
+    padding-left: 90px; 
+  }
+  
+button {
+    margin-left: 0.5em;
+  }
+  
+.boton-enviar {
+    display: flex;
+    margin: 0.3rem 1rem 1rem 0rem;
+    font-size: large; 
+    }
+
+    
+
 @media (min-width: 570px) {
+
   
     .h2 {
         position: relative;
@@ -106,8 +306,179 @@ a {
     .a-contacto {
         padding-block: 6rem;
     }
+
+    /* Medias Quien soy */
+   .navbar {
+    display: flex;
     
+   }
+    .menu-mobil-superbikes {
+        display: none;
+    }
+    .menu-desktop-superbikes {
+        display: flex; 
+        flex: 1;
+        justify-content: space-between;  
+        display: flex;
+        flex: 1;
+        align-content: center;
+        align-items: center;
+        margin-right: 2rem;
+    }
+    .menu-desktop-superbikes > * {
+        list-style-type: none;
+        text-decoration: none;
+        color:black;
+        background-color: white;
+        padding-inline: .1rem;
+    }
+    .toprak-title {
+        color: white;
+        background-color: transparent;
+    }
+    .main_quiensoy {
+        display: flex;
+        flex-direction: column;
+    }
+    .quien_soy_img {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        align-content: center;
+    }
+   
+    .div_quiensoy_letras {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        justify-content: space-around;
+        
+    }
+    .h2 {
+        display: flex;  
+    }
+    .p-quiensoy {
+        display: flex;
+        text-align: center;  
+        max-width: 10rem;
+    }
+    .quien_soy_img2 {
+        max-width: 24%;
+        
+    }
+
+    /* MEDIAS ACADEMIA */
+
+    .tarjetitas {
+        display: flex;
+        flex-direction: row;
+        padding-inline:1rem ;
+    }
+    .tarjetita1 {
+        background-color: #999;
+        margin: 1rem 1rem;
+        flex: 1;
+    }
+    .h2_academia {
+        display: inline;
+        padding: .1rem .1rem .1rem .1rem;
+        color: white;
+        background-color: red;
+    }
+    .p_academia {
+        color: white;
+        margin: .5rem .5rem .5rem .5rem;
+    }
+    .a_academia {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        background-color: black;
+        font-size: larger;
+        border-radius: .1rem ;
+    }
+    .img-academia {
+        width: 95%;
+        margin-inline: 1rem;
+    }
+
+    /* MEDIAS CONTACTO*/
+    .h1-contacto {
+        margin: 1rem 0 1rem 0;
+        }
+    .contacto {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0rem 1rem 0rem 1rem;
+        color: white;
+        text-decoration-line: none;
+        font-size: 1.7rem;
+    }
+    .label {
+        color: white;
+    }
+    
+    form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+      }
+      
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+    form li + li {
+        margin-top: 1em;
+      }
+      
+    label {
+        display: inline-block;
+        width: 90px;
+        text-align: left;
+        
+      }
+      
+    input,textarea {
+        font: 1em sans-serif;
+        width: 320px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+      }
+      
+    input:focus,textarea:focus {
+        border-color: #000;
+      }
+      
+    textarea {
+        vertical-align: top;
+        height: 9em;
+      }
+      
+    .button {
+        padding-left: 90px; 
+      }
+      
+    button {
+        margin-left: 0.5em;
+      }
+      
+    .boton-enviar {
+        display: flex;
+        margin: 0.3rem 1rem 1rem 0rem;
+        align-content: center;
+        font-size: medium;
+        }
+
 }
+
+
 @media (min-width: 1000px) {
     
     .h2 {
@@ -154,43 +525,4 @@ a {
         background-color: rgb(88, 88, 89);
     }
 }
-/* SUPERBIKES */ 
-.navbar {
-    background-color: red;
-}
-.toprak-title {
-  list-style-type: none;  
-  text-decoration: none;
-  color: white;
-  font-size: xx-large;
-  padding-left: 1rem;
-
-}
-.navbar-toggler {
-    margin-right: 1rem;
-}
-.navbar-nav {
-    padding-left: 1.25rem;
-}
-.titulo-superbikes {
-    
-    color: white;
-    display: flex;
-    justify-content: center;
-
-}
-.h2 {
-    text-align: center;
-    color: white;
-    margin: 1rem 0 .5rem 0;
-    padding: 0 0 .3rem 0;
-}
-.p {
-    text-align: start;
-    color: white;
-}
-
-
- 
-
 
