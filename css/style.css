@@ -135,6 +135,17 @@
   .menu-desktop-superbikes {
     display: none;
   }
+  .div_quiensoy_letras > h2{
+    display: flex;
+    
+  }
+  .quien_soy_img2 {
+    display: none;
+     
+  }
+  .div-pr {
+    margin: 1rem 1rem 1rem 1rem;
+  }
   
   /* Yamaha Racing */
   .yamaha_racing {
@@ -289,6 +300,7 @@
   }
   
   @media (min-width: 570px) {
+    /* Medias Index */
     .h2 {
       position: relative;
     }
@@ -316,6 +328,7 @@
       padding-block: 6rem;
     }
     /* Medias Quien soy */
+    
     .navbar {
       display: flex;
     }
@@ -355,21 +368,43 @@
     }
     .div_quiensoy_letras {
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column;
+      align-items: end;
       flex: 1;
-      justify-content: space-around;
+      margin-right: 0rem;
     }
     .h2 {
       display: flex;
+      margin-right: 4rem;
     }
     .p-quiensoy {
       display: flex;
       text-align: center;
-      max-width: 10rem;
+      max-width: 16.5rem;
+      color: #000;
+      background-color: white;
     }
-    .quien_soy_img2 {
-      max-width: 24%;
+    .div-pr {
+      display: flex;
+    }
+    .quien_soy_img1 {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      align-content: center;
+      padding: .5rem 0 0 .5rem;
+  }
+  .quien_soy_img {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      align-content: center;
+      padding: .5rem 0 0 .5rem;
+  }
+
+    
+    .div-pr {
+      margin: 0;
     }
     /* MEDIAS ACADEMIA */
     .tarjetitas {
@@ -466,7 +501,9 @@
       font-size: medium;
     }
   }
+  
   @media (min-width: 1000px) {
+    /*Media Index */
     .h2 {
       position: relative;
     }

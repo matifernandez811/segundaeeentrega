@@ -1,0 +1,161 @@
+.toprak-title:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.35) rotate(0deg);
+  color: #000;
+}
+.a-inicio:hover {
+  transform: scale(1.6) rotate(5deg);
+}
+.a-yamaha:hover {
+  transform: scale(1.6) rotate(5deg);
+}
+.a-academiaa:hover {
+  transform: scale(1.6) rotate(5deg);
+}
+.a-contactoo:hover {
+  transform: scale(1.6) rotate(5deg);
+}
+
+.div-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0.5rem 1rem 0rem 1rem;
+    color: white;
+    text-decoration-line: none;
+    font-size: 1.7rem;
+
+    .div-h1 > h1 {
+        padding-inline: 1rem;
+      }
+  }
+  
+  
+  
+  .tarjetitas {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0rem;
+
+    @include tablet {
+            display: flex;
+            flex-direction: row;
+            padding-inline: 1rem;      
+    }
+
+    .tarjetita1 {
+        background-color: #999;
+        margin: 1rem 1rem;
+        flex: 1;
+        max-width: 30rem;
+
+        @include tablet {
+            background-color: #999;
+            margin: 1rem 1rem;
+            flex: 1;    
+        }
+
+        .h2_academia {
+            display: inline;
+            padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+            color: white;
+            background-color: red;
+
+            @include tablet {
+                display: inline;
+                padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+                color: white;
+                background-color: red;     
+            }
+          }
+
+          .p_academia {
+            color: white;
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+            @include tablet {
+                    color: white;
+                    margin: 0.5rem 0.5rem 0.5rem 0.5rem;     
+            }
+
+            .a_academia {
+                text-decoration: none;
+                list-style-type: none;
+                color: white;
+                background-color: black;
+                font-size: larger;
+                border-radius: 0.1rem;
+
+
+                @include tablet {
+                        text-decoration: none;
+                        list-style-type: none;
+                        color: white;
+                        background-color: black;
+                        font-size: larger;
+                        border-radius: 0.1rem;
+                        
+                }
+              }
+          }
+      }
+  }
+
+  .tarjetita1:hover {
+    transform: scale(1.14);
+  }
+
+
+
+  .div-final {
+    display: flex;
+    flex-direction: column;
+    .img-academia {
+      width: 99%;
+      margin-inline: 1rem;
+      justify-content: center;
+      align-items: center;
+      align-content: center; 
+  
+      @include tablet {
+              width: 95%;
+              margin-inline: 1rem;    
+      }
+    }
+    
+    
+    .inscribirse {
+      display: flex;
+      background-color: red;
+      max-width: 10rem;
+      justify-content: center;
+      align-content: center;
+      align-items: center; 
+      max-width: 50rem;
+      font-size: x-large;
+      margin: .5rem 1rem .5rem 1rem;
+      text-decoration: none;
+      color: black;
+      
+
+      @include tablet {
+        display: flex;
+        background-color: red;
+        max-width: 100rem;
+        justify-content: center;
+        align-content: center;
+        align-items: center; 
+        font-size: xx-large;
+        margin: 1rem 2.5rem .7rem 2rem;
+        padding-bottom: .3rem ;
+
+      }
+    }
+    .inscribirse:hover {
+      background-color: rgb(182, 13, 13);
+      transform: scale(1) rotate(0.5deg);
+    }
+  
+  }
+  
+  

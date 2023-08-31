@@ -1,0 +1,142 @@
+
+  
+  
+  .principal {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-decoration: none;
+      }
+
+    .a-quiensoy {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(41, 76, 250);
+        font-size: x-large;
+        opacity: 70%;
+        color: black;
+        padding-block: 0.5rem;
+        align-items: center;
+      }
+      
+      .a-racingteam {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(248, 111, 3);
+        font-size: x-large;
+        opacity: 70%;
+        color: black;
+        padding-block: 0.5rem;
+        padding-right: 1rem;
+        align-items: center;
+      }
+      
+      .a-academia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 164, 27);
+        font-size: x-large;
+        opacity: 70%;
+        color: black;
+        padding-block: 0.5rem;
+        align-items: center;
+      }
+      
+      .a-contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 246, 244);
+        font-size: x-large;
+        opacity: 70%;
+        color: black;
+        padding-block: 0.5rem;
+        align-items: center;
+      }
+  }
+  
+  
+  
+
+  @include tablet {
+    
+      .principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "div-toprak0 div-toprak" "div-superbikes div-racingteam" "div-academia div-contacto";
+        margin-top: 0.5rem;
+        min-height: 93vh;
+
+        .a-quiensoy {
+          padding-block: 6rem;
+        }
+        .a-racingteam {
+          padding-block: 6rem;
+        }
+        .a-academia {
+          padding-block: 6rem;
+        }
+        .a-contacto {
+          padding-block: 6rem;
+        }
+      }
+
+      
+  }
+
+  @include desktop {
+
+      .principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "div-toprak0 div-toprak0 div-superbikes div-racingteam" "div-toprak div-toprak div-preparaciones div-contacto";
+        min-height: 93vh;
+
+        .div-toprak0 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 0;
+          grid-row-end: 2;
+        }
+        .div-toprak {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 0;
+          grid-row-end: 3;
+        }
+        .a-quiensoy {
+          padding-block: 6rem;
+          padding-inline: 0;
+        }
+        .a-racingteam {
+          padding-block: 6rem;
+          padding-inline: 0;
+        }
+        .a-academia {
+          padding-block: 6rem;
+        }
+        .a-contacto {
+          padding-block: 6rem;
+        }
+        .a-quiensoy:hover {
+          transition: background-color 0.5s;
+          margin: .5rem .9rem .9rem .9rem; 
+        }
+        .a-racingteam:hover {
+          transition: background-color 0.5s;
+          margin: .5rem .9rem .9rem .9rem; 
+          padding-left: 0rem;
+        }
+        .a-academia:hover {
+          transition: background-color 0.5s;
+          margin: .9rem .9rem .9rem .9rem;
+        }
+        .a-contacto:hover {
+          transition: background-color 0.5s;
+          margin: .9rem .9rem .9rem .9rem;
+        }
+      }
+      
+  }
