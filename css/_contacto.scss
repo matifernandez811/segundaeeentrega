@@ -18,9 +18,10 @@
 }
 
 .main_contact {
-  background-image: url("../imagenes/imagesss.jpeg");
+  background-image: url("../imagenes/posiblebackground.jpeg");
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: cover;
+  margin: .8rem;
 
   .contacto {
     display: flex;
@@ -112,6 +113,7 @@
         width: 90px;
         text-align: left;
         color: white;
+        background-color: #7c7c7e;
 
         @include tablet {
             color: white;

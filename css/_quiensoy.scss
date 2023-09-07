@@ -106,8 +106,24 @@
         }
     }
   }
+
+  .main_quiensoy {
+    position: relative;
+    @include tablet {
+      gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "div-pr div_quiensoy_letras"
+                          "div-pr div_quiensoy_letras"
+                          "div_quiensoy_letras2 div-pr1 "
+                          "div_quiensoy_letras2 div-pr1";
+
+  }
+
   .div_quiensoy_letras > h2{
     display: flex;
+    font-size: xx-large;
     
   }
   .quien_soy_img2 {
@@ -115,6 +131,9 @@
      
   }
   .div-pr {
+    display: flex;
+    justify-content: center;
+    flex: 1;
     margin: 1rem 1rem 1rem 1rem;
 
     @include tablet {
@@ -123,14 +142,132 @@
       
       .quien_soy_img1 {
         display: flex;
-        width: 50%;
+        width: 100%;
         align-items: center;
         align-content: center;
         padding: .5rem 0 0 .5rem;
     }
       .quien_soy_img {
         display: flex;
-        width: 50%;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        padding: .5rem 0 0 .5rem;
+    }
+    }
+  }
+  .div-pr1 {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 1rem 1rem 1rem 1rem;
+
+    @include tablet {
+        margin: .25rem 0 0 0;
+        display: flex;
+      
+      .quien_soy_img11 {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        align-content: flex-end;
+        padding: .5rem 0 0 .5rem;
+        justify-content: center;
+    }
+      .quien_soy_img00 {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        align-content: end;
+        padding: .5rem 0 0 .5rem;
+    }
+    }
+  }
+
+
+  @include tablet {
+    .div_quiensoy_letras {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      margin-right: 0rem;
+
+      .h2 {
+        display: flex;
+      }
+
+      .p-quiensoy {
+        display: flex;
+        text-align: center;
+        max-width: 16.5rem;
+        color: white;
+        font-size: larger;
+      }
+    }
+    
+  }
+
+  @include tablet {
+    .div_quiensoy_letras2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex: 1;
+      margin-right: 0rem;
+
+      .h2 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .p-quiensoy {
+        display: flex;
+        text-align: center;
+        max-width: 16.5rem;
+        color: white;
+        justify-content: center;
+        font-size: larger;
+      }
+    }
+   
+  }
+
+}
+
+
+  .div_quiensoy_letras > h2{
+    display: flex;
+    font-size: xx-large;
+    
+  }
+  .quien_soy_img2 {
+    display: none;
+     
+  }
+  .div-pr {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 1rem 1rem 1rem 1rem;
+
+    @include tablet {
+        margin: .25rem 0 0 0;
+        display: flex;
+      
+      .quien_soy_img1 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        padding: .5rem 0 0 .5rem;
+    }
+      .quien_soy_img {
+        display: flex;
+        width: 100%;
         align-items: center;
         align-content: center;
         padding: .5rem 0 0 .5rem;
@@ -145,19 +282,19 @@
         display: flex;
         align-items: end;
         align-content: end;
-        justify-content: end;
+        justify-content: center;
       
       .quien_soy_img11 {
         display: flex;
-        width: 50%;
+        width: 100%;
         align-items: flex-end;
         align-content: flex-end;
         padding: .5rem 0 0 .5rem;
-        justify-content: right;
+        justify-content: center;
     }
       .quien_soy_img00 {
         display: flex;
-        width: 50%;
+        width: 100%;
         align-items: flex-end;
         align-content: end;
         padding: .5rem 0 0 .5rem;
@@ -170,21 +307,21 @@
     .div_quiensoy_letras {
       display: flex;
       flex-direction: column;
-      align-items: end;
+      justify-content: center;
+      align-items: center;
       flex: 1;
       margin-right: 0rem;
 
       .h2 {
         display: flex;
-        margin-right: 5rem;
       }
 
       .p-quiensoy {
         display: flex;
         text-align: center;
         max-width: 16.5rem;
-        color: #000;
-        background-color: white;
+        color: white;
+        font-size: larger;
       }
     }
     
@@ -194,22 +331,76 @@
     .div_quiensoy_letras2 {
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
       flex: 1;
       margin-right: 0rem;
 
       .h2 {
         display: flex;
-        margin-left: 3.1rem;
+        justify-content: center;
       }
 
       .p-quiensoy {
         display: flex;
         text-align: center;
         max-width: 16.5rem;
-        color: #000;
-        background-color: white;
+        color: white;
+        justify-content: center;
+        font-size: larger;
       }
     }
    
   }
+
+  .pie-pagina {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    
+
+    @include tablet {
+      background-color: white;
+      flex-direction: row;
+      margin: 0 0rem 0rem rem;
+      padding: 1rem 1.5rem 0rem 1rem;
+      justify-content: space-between;
+    }
+
+    .uno {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 1rem 1rem 1rem 1rem;
+
+    .imgfooter {
+      max-width: 5rem;
+    }
+    }
+
+    .dos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include tablet {
+        padding: 0 1rem 1rem 2rem;
+        .h2-pie {
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+        }
+      }
+
+    }
+
+    .tres {
+      padding-right: 0rem; 
+    }
+
+    }
+   
+  
