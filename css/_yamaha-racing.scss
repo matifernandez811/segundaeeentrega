@@ -18,7 +18,10 @@
 
 .main_yamaha {
   max-width: 130vh;
-  margin-bottom: 15rem;
+  @include tablet {
+    margin-bottom: 15rem;
+  }
+  
   .yamaha_racing {
     background-color: black;
     color: white;

@@ -18,7 +18,11 @@
 
 .main_academia {
   max-width: 130vh;
-  margin-bottom: 15rem;
+  
+  @include tablet {
+    margin-bottom: 15rem;
+  }
+  
   .div-h1 {
     display: flex;
     justify-content: center;
