@@ -21,7 +21,11 @@
   background-image: url("../imagenes/posiblebackground.jpeg");
   background-position: center;
   background-attachment: cover;
-  margin: .8rem;
+  margin: 1rem;
+
+  @include tablet {
+    margin-bottom: 15rem
+  }
 
   .contacto {
     display: flex;

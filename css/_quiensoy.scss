@@ -110,6 +110,7 @@
   .main_quiensoy {
     position: relative;
     @include tablet {
+      max-width: 130vh;
       gap: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -364,7 +365,7 @@
     @include tablet {
       background-color: white;
       flex-direction: row;
-      margin: 0 0rem 0rem rem;
+      margin: 0 0rem 0rem 0rem;
       padding: 1rem 1.5rem 0rem 1rem;
       justify-content: space-between;
     }

@@ -271,6 +271,7 @@ h1 {
 }
 @media screen and (min-width: 570px) {
   .main_quiensoy {
+    max-width: 130vh;
     gap: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -499,7 +500,7 @@ h1 {
   .pie-pagina {
     background-color: white;
     flex-direction: row;
-    margin: 0 0rem 0rem rem;
+    margin: 0 0rem 0rem 0rem;
     padding: 1rem 1.5rem 0rem 1rem;
     justify-content: space-between;
   }
@@ -555,14 +556,16 @@ h1 {
   transform: scale(1.6) rotate(5deg);
 }
 
-.yamaha_racing {
+.main_yamaha {
+  max-width: 130vh;
+}
+.main_yamaha .yamaha_racing {
   background-color: black;
   color: white;
   margin-top: 1rem;
   padding: 1rem;
 }
-
-.img-yamaharacing {
+.main_yamaha .img-yamaharacing {
   margin-left: 1rem;
   max-width: 90%;
   display: flex;
@@ -570,8 +573,7 @@ h1 {
   align-items: center;
   align-content: center;
 }
-
-.p-yamaha {
+.main_yamaha .p-yamaha {
   color: white;
   padding: 0.5rem;
 }
@@ -598,7 +600,10 @@ h1 {
   transform: scale(1.6) rotate(5deg);
 }
 
-.div-h1 {
+.main_academia {
+  max-width: 130vh;
+}
+.main_academia .div-h1 {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -607,60 +612,59 @@ h1 {
   text-decoration-line: none;
   font-size: 1.7rem;
 }
-.div-h1 .div-h1 > h1 {
+.main_academia .div-h1 .div-h1 > h1 {
   padding-inline: 1rem;
 }
-
-.tarjetitas {
+.main_academia .tarjetitas {
   display: flex;
   flex-direction: column;
   margin-inline: 0rem;
 }
 @media screen and (min-width: 570px) {
-  .tarjetitas {
+  .main_academia .tarjetitas {
     display: flex;
     flex-direction: row;
     padding-inline: 1rem;
   }
 }
-.tarjetitas .tarjetita1 {
+.main_academia .tarjetitas .tarjetita1 {
   background-color: #999;
   margin: 1rem 1rem;
   flex: 1;
-  max-width: 30rem;
+  max-width: 40rem;
 }
 @media screen and (min-width: 570px) {
-  .tarjetitas .tarjetita1 {
+  .main_academia .tarjetitas .tarjetita1 {
     background-color: #999;
-    margin: 1rem 1rem;
+    margin: 1rem 1.3rem;
     flex: 1;
   }
 }
-.tarjetitas .tarjetita1 .h2_academia {
+.main_academia .tarjetitas .tarjetita1 .h2_academia {
   display: inline;
   padding: 0.1rem 0.1rem 0.1rem 0.1rem;
   color: white;
   background-color: red;
 }
 @media screen and (min-width: 570px) {
-  .tarjetitas .tarjetita1 .h2_academia {
+  .main_academia .tarjetitas .tarjetita1 .h2_academia {
     display: inline;
     padding: 0.1rem 0.1rem 0.1rem 0.1rem;
     color: white;
     background-color: red;
   }
 }
-.tarjetitas .tarjetita1 .p_academia {
+.main_academia .tarjetitas .tarjetita1 .p_academia {
   color: white;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 @media screen and (min-width: 570px) {
-  .tarjetitas .tarjetita1 .p_academia {
+  .main_academia .tarjetitas .tarjetita1 .p_academia {
     color: white;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
 }
-.tarjetitas .tarjetita1 .p_academia .a_academia {
+.main_academia .tarjetitas .tarjetita1 .p_academia .a_academia {
   text-decoration: none;
   list-style-type: none;
   color: white;
@@ -669,7 +673,7 @@ h1 {
   border-radius: 0.1rem;
 }
 @media screen and (min-width: 570px) {
-  .tarjetitas .tarjetita1 .p_academia .a_academia {
+  .main_academia .tarjetitas .tarjetita1 .p_academia .a_academia {
     text-decoration: none;
     list-style-type: none;
     color: white;
@@ -678,16 +682,14 @@ h1 {
     border-radius: 0.1rem;
   }
 }
-
-.tarjetita1:hover {
+.main_academia .tarjetita1:hover {
   transform: scale(1.14);
 }
-
-.div-final {
+.main_academia .div-final {
   display: flex;
   flex-direction: column;
 }
-.div-final .img-academia {
+.main_academia .div-final .img-academia {
   width: 99%;
   margin-inline: 1rem;
   justify-content: center;
@@ -695,29 +697,29 @@ h1 {
   align-content: center;
 }
 @media screen and (min-width: 570px) {
-  .div-final .img-academia {
+  .main_academia .div-final .img-academia {
     width: 95%;
     margin-inline: 1rem;
   }
 }
-.div-final .inscribirse {
+.main_academia .div-final .inscribirse {
   display: flex;
   background-color: red;
   max-width: 10rem;
   justify-content: center;
   align-content: center;
   align-items: center;
-  max-width: 50rem;
+  max-width: 25rem;
   font-size: x-large;
   margin: 0.5rem 1rem 0.5rem 1rem;
   text-decoration: none;
   color: black;
 }
 @media screen and (min-width: 570px) {
-  .div-final .inscribirse {
+  .main_academia .div-final .inscribirse {
     display: flex;
     background-color: red;
-    max-width: 100rem;
+    max-width: 40rem;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -726,9 +728,9 @@ h1 {
     padding-bottom: 0.3rem;
   }
 }
-.div-final .inscribirse:hover {
+.main_academia .div-final .inscribirse:hover {
   background-color: rgb(182, 13, 13);
-  transform: scaleY(1.1) rotate(0.5deg);
+  transform: scale(1.15);
 }
 
 .toprak-title:hover {
@@ -757,7 +759,12 @@ h1 {
   background-image: url("../imagenes/posiblebackground.jpeg");
   background-position: center;
   background-attachment: cover;
-  margin: 0.8rem;
+  margin: 1rem;
+}
+@media screen and (min-width: 570px) {
+  .main_contact {
+    margin-bottom: 15rem;
+  }
 }
 .main_contact .contacto {
   display: flex;

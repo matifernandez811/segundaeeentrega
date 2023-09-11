@@ -15,7 +15,10 @@
 .a-contactoo:hover {
   transform: scale(1.6) rotate(5deg);
 }
-.yamaha_racing {
+
+.main_yamaha {
+  max-width: 130vh;
+  .yamaha_racing {
     background-color: black;
     color: white;
     margin-top: 1rem;
@@ -35,6 +38,8 @@
     color: white;
     padding: 0.5rem;
   }
+
+}
 
 
   
