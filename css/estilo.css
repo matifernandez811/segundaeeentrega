@@ -558,6 +558,7 @@ h1 {
 
 .main_yamaha {
   max-width: 130vh;
+  margin-bottom: 15rem;
 }
 .main_yamaha .yamaha_racing {
   background-color: black;
@@ -602,6 +603,7 @@ h1 {
 
 .main_academia {
   max-width: 130vh;
+  margin-bottom: 15rem;
 }
 .main_academia .div-h1 {
   display: flex;
