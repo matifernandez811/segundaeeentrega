@@ -4,7 +4,7 @@
 
     .toprak-title:hover {
       background-color: rgb(255, 255, 255);
-      transform: scale(1.35) rotate(0deg);
+      transform: scale(1.6) rotate(0deg);
       color: #000;
     }
     .a-inicio:hover {
@@ -46,7 +46,7 @@
     text-decoration: none;
     color: white;
     font-size: xx-large;
-    padding-left: 1rem;
+    padding-inline: 0rem;
     margin-left: 1rem;
   }
   
@@ -67,11 +67,13 @@
   .h2 {
     display: flex;
     justify-content: center;
-    background-color: white;
     text-align: center;
-    color: black;
+    color: white;
     margin: 1rem 1rem 0.5rem 1rem;
     padding: 0 0 0.3rem 0;
+    font-style: bold;
+    font-weight: 900;
+    
   }
   
   .p-quiensoy {
@@ -91,18 +93,24 @@
         flex: 1;
         align-content: center;
         align-items: center;
-        margin-right: 2rem;
+        margin-right: 0.4rem;
 
          > * {
           list-style-type: none;
           text-decoration: none;
-          color: black;
-          background-color: white;
-          padding-inline: 0.1rem;
+          color: white;
+          padding-inline: 0rem;
+          font-style: italic;
+          font-weight: 900;
+          margin-left: .3rem;
         }
         .toprak-title {
-          color: white;
-          background-color: transparent;
+          color: black;
+          background-color: white;
+          margin: 0 0 0 .5rem;
+          padding: 0rem .2rem 0rem .6rem;
+          font-size: x-large;
+          transform: scale(1.45);
         }
     }
   }
