@@ -754,8 +754,8 @@ h1 {
   flex-direction: column;
 }
 .main_academia .div-final .img-academia {
-  width: 99%;
-  margin-inline: 1rem;
+  width: 100%;
+  margin-inline: 0rem;
   justify-content: center;
   align-items: center;
   align-content: center;
