@@ -49,9 +49,17 @@
     .h1-contacto {
       background-color: transparent;
       margin: 1rem 0 1rem 0;
+      font-weight: 1000;
+          font-style: oblique;
+          text-decoration: underline;
+          color: white;
 
       @include tablet {
           margin: 1rem 0 1rem 0; 
+          font-weight: 1000;
+          font-style: oblique;
+          text-decoration: underline;
+          color: white;
       }
     }
   }
@@ -66,22 +74,26 @@
     border-radius: 1em;
 
     @include tablet {
-        margin: 0 auto;
-        width: 400px;
-        padding: 1em;
-        border: 1px solid #ccc;
-        border-radius: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 10rem;
+      width: 400px;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
     }
 
     ul {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin-block: .5rem;
 
       @include tablet {
           list-style: none;
           padding: 0;
-          margin: 0;
+          margin-bottom: 1rem;
       }
 
       .button {
@@ -101,7 +113,8 @@
             display: flex;
             margin: 0.3rem 1rem 1rem 0rem;
             align-content: center;
-            font-size: medium;
+            font-size: large;
+            font-weight: 900;
         }
       }
 
@@ -125,6 +138,8 @@
             display: inline-block;
             width: 90px;
             text-align: left;
+            font-weight: 800;
+            text-decoration: underline;
     
         }
       }
@@ -136,14 +151,11 @@
         border: 1px solid #999;
 
         @include tablet {
-            border-color: #000;
-        }
-
-        @include tablet {
             font: 1em sans-serif;
             width: 320px;
             box-sizing: border-box;
             border: 1px solid #999;
+            border-color: #000;
         }
       }
 
@@ -153,7 +165,7 @@
 
         @include tablet {
             vertical-align: top;
-            height: 9em;
+            height: 15em;
         }
       }
     }

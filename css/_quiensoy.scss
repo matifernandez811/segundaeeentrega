@@ -3,9 +3,14 @@
     display: flex;
 
     .toprak-title:hover {
+    
+      @include tablet { 
+      display: flex;
       background-color: rgb(255, 255, 255);
-      transform: scale(1.6) rotate(0deg);
+      transform: scale(1.45) rotate(0deg);
+      background-color: rgb(130, 130, 130);
       color: #000;
+    }
     }
     .a-inicio:hover {
       transform: scale(1.6) rotate(5deg);
@@ -48,6 +53,7 @@
     font-size: xx-large;
     padding-inline: 0rem;
     margin-left: 1rem;
+    font-weight: 800;
   }
   
   .navbar-toggler {
@@ -55,7 +61,14 @@
   }
   
   .navbar-nav {
-    padding-left: 2.15rem;
+    padding-left: 2rem;
+    margin-top: .5rem;
+
+    .nav-link {
+      color: rgb(237, 228, 228);
+      font-weight: 600;
+      text-decoration: underline;
+    }
   }
   
   .titulo-superbikes {
@@ -89,11 +102,9 @@
         display: flex;
         flex: 1;
         justify-content: space-between;
-        display: flex;
-        flex: 1;
         align-content: center;
         align-items: center;
-        margin-right: 0.4rem;
+        margin-right: 0rem;
 
          > * {
           list-style-type: none;
@@ -101,8 +112,9 @@
           color: white;
           padding-inline: 0rem;
           font-style: italic;
-          font-weight: 900;
-          margin-left: .3rem;
+          font-weight: 800;
+          
+
         }
         .toprak-title {
           color: black;
@@ -213,6 +225,7 @@
         max-width: 16.5rem;
         color: white;
         font-size: larger;
+        text-decoration: underline;
       }
     }
     
@@ -240,6 +253,7 @@
         color: white;
         justify-content: center;
         font-size: larger;
+        text-decoration: underline;
       }
     }
    
@@ -368,14 +382,18 @@
     flex-direction: column;
     flex: 1;
     width: 100%;
+    padding: 0 .5rem .5rem .5rem;
+    text-align: center;
+    color: rgb(224, 217, 217);
     
 
     @include tablet {
-      background-color: white;
+      background-color: rgb(161, 161, 161);
       flex-direction: row;
       margin: 0 0rem 0rem 0rem;
       padding: 1rem 1.5rem 0rem 1rem;
       justify-content: space-between;
+      color: rgb(3, 3, 3);
     }
 
     .uno {
@@ -408,6 +426,9 @@
 
     .tres {
       padding-right: 0rem; 
+      justify-content: center;
+          align-items: center;
+          align-content: center;
     }
 
     }

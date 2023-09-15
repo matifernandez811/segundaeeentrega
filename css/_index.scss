@@ -4,7 +4,7 @@
   .principal {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .3rem;
     background-color: white;
     padding: .5rem .5rem .5rem .5rem ;
     a {
@@ -79,7 +79,7 @@
         grid-template-areas: "div-toprak0 div-toprak" "div-superbikes div-racingteam" "div-academia div-contacto";
         margin-top: 0.5rem;
         min-height: 93vh;
-        gap: 1.4rem;
+        gap: .3rem;
 
         .a-quiensoy {
           padding-block: 6rem;
@@ -108,7 +108,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: "div-toprak0 div-toprak0 div-superbikes div-racingteam" "div-toprak div-toprak div-preparaciones div-contacto";
         min-height: 93vh;
-        gap: .3rem;
+        gap: .4rem;
 
         .div-toprak0 {
           grid-column-start: 1;
@@ -154,6 +154,7 @@
           font-style: italic;
           font-weight: 800;
           font-size: xx-large;
+          text-align: center;
         }
         .a-academia:hover {
           transition: background-color 0s;
